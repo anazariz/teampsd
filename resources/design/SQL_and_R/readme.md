@@ -1,6 +1,6 @@
 ## hypothesis
 
-**RStudio as a viable IDE (Integrated Development Environment) for MTL**
+**As a Data Engineer RStudio is a viable IDE (Integrated Development Environment) for managing the MTL data**
 
  1. Integrates seemliness with the R language and the R interpreter
  2.  The R is an Object Oriented scripting language used predominantly by the scientific community for its robust statistical packages and visualization

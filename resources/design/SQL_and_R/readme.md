@@ -6,7 +6,7 @@
  2.  The R is an Object Oriented scripting language used predominantly by the scientific community for its robust statistical packages and visualization
  3. R is part of an open source platform with numerous contributors
  4. RStudio integrates well with the GitHub platform and can be used to create GitHub Actions
- 5. > RStudio can be integrated seamlessly with SQL Server databases used by the MTL platform
+ 5. **RStudio can be integrated seamlessly with SQL Server databases used by the MTL platform**
 
 The focus of the documents in this folder is on **item #5**. The objective is to demonstrate the viability of using **RStudio** as a medium for establishing an **end-to-end data lineage** view starting from the data extraction point (**VA CDW Data Warehouse**) to the data consumption point (**R datasets or Visualizations**). Easy access to end-to-end data lineage is critical when validating and certifying extracted data and the transformation functions operating on that data throughout its journey to an endpoint. 
 

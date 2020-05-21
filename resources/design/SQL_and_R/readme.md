@@ -10,15 +10,6 @@
 
 The focus of the documents in this folder is on **item #5**. The objective is to demonstrate the viability of using **RStudio** as a medium for establishing an **end-to-end data lineage** view starting from the data extraction point (**VA CDW Data Warehouse**) to the data consumption point (**R datasets or Visualizations**). Easy access to end-to-end data lineage is critical when validating and certifying extracted data and the transformation functions operating on that data throughout its journey to an endpoint. 
 
-```mermaid
-graph LR
-A[collect data from CDW] -- via R directly --> B(transform and integrate data in R)
-A -- via SSMS --> C(transform and integrate data in SQL Server)
-C --> D(R dataset)
-B --> D(R dataset)
-D --> E(consume dataset)
-```
-
 **Who:** Which **users** should test it.
 The hypothesis can be tested by those who are stakeholders in the validity of data used in a research, which includes data owners, data engineers and modelers, data analysts, data validators, data stewards, data scientists and  support personnel.     
 

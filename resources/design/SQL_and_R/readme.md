@@ -1,3 +1,6 @@
+<img src = "https://github.com/lzim/teampsd/blob/teampsd_style/teampsd_logo/team_psd_logo_sm.png"
+     height = "200" width = "600"> 
+
 ## hypothesis
 
 **TeamPSD data consumers can use RStudio as a viable IDE (Integrated Development Environment) for interacting with MTL data.**

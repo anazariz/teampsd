@@ -46,7 +46,7 @@ step 1-what do you need to get started
 step 2-setting up SQL Server  
 step 3-setting up R and RStudio  
 step 4-setting up ODBC  
-step 5-how to consume SQL Server in RStudio using R Notebooks  
+step 5-how to consume SQL Server data in RStudio using R Notebooks  
 step 6-R datasets and visualizations  
 step 7-putting it altogether  
 

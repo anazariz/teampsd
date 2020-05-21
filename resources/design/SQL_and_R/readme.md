@@ -39,7 +39,7 @@ b) **observational:**
 User can leave a video of his/her experience with the instruction provide in this folder. 
  
  **Where:** Where is this prototype on **GitHub**?
-prototype files are located in this folder and the steps to be followed are enumerated within the file naming conventions.  
+prototype files are located in this folder and the steps to be followed are enumerated in the file names.  
  
 **When:** When should they provide **feedback** for it to be 
 Please provide your feedback by 05/31/2020.

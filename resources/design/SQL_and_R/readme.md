@@ -1,3 +1,4 @@
+
 ## hypothesis
 
 **RStudio as a viable IDE (Integrated Development Environment) for MTL**
@@ -8,7 +9,7 @@
  4. RStudio integrates well with the GitHub platform and can be used to create GitHub Actions
  5. **RStudio can be integrated seamlessly with SQL Server databases used by the MTL platform**
 
-The focus of the documents in this folder is on **item #5**. The objective is to demonstrate the viability of using **RStudio** as a medium for establishing an **"end-to-end data lineage"** view starting from the data extraction point (**VA CDW Data Warehouse**) to the data consumption point (**R datasets or Visualizations**). Easy access to end-to-end data lineage is critical when validating and certifying extracted data and the transformation functions operating on that data throughout its journey to an endpoint. 
+The focus of the documents in this folder is on **item #5**. The objective is to demonstrate the viability of using **RStudio** as a medium for establishing an **"end-to-end data lineage"** view starting from the data extraction point (**VA CDW data warehouse**) to the data consumption point (**R datasets and visualizations**). Easy access to end-to-end data lineage is critical when validating and certifying extracted data and the transformation functions operating on that data throughout its journey to an endpoint. 
 
 **Who:** Which **users** should test it.
 The hypothesis can be tested by those who are stakeholders in the validity of data used in a research, which includes data owners, data engineers and modelers, data analysts, data validators, data stewards, data scientists and  support personnel.     
@@ -39,7 +40,15 @@ b) **observational:**
 User can leave a video of his/her experience with the instruction provide in this folder. 
  
  **Where:** Where is this prototype on **GitHub**?
-prototype files are located in this folder and the steps to be followed are enumerated in the file names.  
- 
+prototype files are located in this folder and the steps to be followed are enumerated in the file names as follows:
+
+step 1-what do you need to get started
+step 2-setting up SQL Server
+step 3-setting up R and RStudio
+step 4-setting up ODBC
+step 5-how to consume SQL Server in RStudio using R Notebooks
+step 6-R datasets and visualizations
+step 7-putting it altogether
+
 **When:** When should they provide **feedback** for it to be 
 Please provide your feedback by 05/31/2020.

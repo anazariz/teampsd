@@ -1,4 +1,3 @@
-
 ## hypothesis
 
 **RStudio as a viable IDE (Integrated Development Environment) for MTL**
@@ -42,13 +41,15 @@ User can leave a video of his/her experience with the instruction provide in thi
  **Where:** Where is this prototype on **GitHub**?
 prototype files are located in this folder and the steps to be followed are enumerated in the file names as follows:
 
-step 1-what do you need to get started  
-step 2-setting up SQL Server  
-step 3-setting up R and RStudio  
-step 4-setting up ODBC  
-step 5-how to consume SQL Server data in RStudio using R Notebooks  
-step 6-R datasets and visualizations  
-step 7-putting it altogether  
+|step  |can skip  |
+|--|--|
+|step 1-what do you need to get started|Y  |
+|step 2-setting up SQL Server|Y  |
+|step 3-setting up R and RStudio|Y  |
+|step 4-setting up ODBC  |Y  |
+|step 5-how to consume SQL Server data in RStudio using R Notebooks |Y  |
+|step 6-R datasets and visualizations |Y  |
+|step 7-putting it altogether   |Y  |
 
 **When:** When should they provide **feedback** for it to be 
 Please provide your feedback by 05/31/2020.

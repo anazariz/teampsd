@@ -9,7 +9,7 @@ Please note that some steps can be skipped within the VA environment, with acces
 
 |step  |can skip?  |
 |--|--|
-|step 1-what do you need to get started|Y  |
+|step 1-what you need to get started|Y  |
 |step 2-setting up SQL Server|Y  |
 |step 3-setting up ODBC  |N  |
 |step 4-setting up R and RStudio|N  |
@@ -17,7 +17,7 @@ Please note that some steps can be skipped within the VA environment, with acces
 |step 6-R datasets, Notebooks and visualization |N  |
 |step 7-putting it altogether - END-TO-END visibility |N  |
 
-**step 1-what do you need to get started**
+**step 1-what you need to get started**
 
 To complete the testing of this prototype we will need SQL Server, SQL Server Management Studio (SSMS), a working SQL Server database, ODBC, R, RStudio and several R Package.  
 
@@ -41,4 +41,10 @@ Once you've downloaded the file, please follow the instruction on that site to r
 Login to the server and make sure that you see a database in the 
 **SSMS Object Explorer** (left side panel of SSMS).
 
-  
+**step 3-setting up ODBC**
+
+Please choose "User DSN" instead of "System DSN" as instructed in the following links. Name your User DSN: R_SQL_SERVER. 
+
+For Windows follow [these instructions](https://www.firehousesoftware.com/webhelp/FHCADMonitor/Content/InstallationGuide/03_Create64-bitODBCDataSource.htm).
+
+For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s-3731160.html). 

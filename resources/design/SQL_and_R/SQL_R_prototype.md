@@ -23,7 +23,8 @@ To complete the testing of this prototype we will need SQL Server, SQL Server Ma
 
 **step 2-setting up SQL Server**
 
-Attention Image
+![attention](https://user-images.githubusercontent.com/39805164/82708362-e86d5a80-9c32-11ea-8361-9b78d9ddeaf8.png)
+
 **Please DO NOT download or install SQL Server on a VA machine.** 
 
 SQL Server can be downloaded [here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). 

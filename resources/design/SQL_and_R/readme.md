@@ -16,7 +16,7 @@ The focus of the documents in this folder is on **item #5**. The objective is to
 **Who should test the hypothsis:**
 The hypothesis can be tested by those who are stakeholders in the validity of data used in a research, which includes data owners, data engineers and modelers, data analysts, data validators, data stewards, data scientists and  support personnel.     
 
-**Why would you test the hypothesis:**
+**Why test the hypothesis:**
 Data stakeholders examine the feasibility and availability of the proposed solution and prototype from the perspective of their own usage. 
 
  1. Is the solution simple enough to use or does it have a steep
@@ -41,8 +41,8 @@ example: ash_nazarizadeh_05_31_2020.md
 b) **observational:**
 Please leave a video of your experience in this folder. 
  
-**Where is this prototype on **GitHub:**
+**Where is the prototype on **GitHub:**
 The prototype file is name SQL_R_prototype and is in this folder.
 
-**When to provide your feedback by:**   
+**When to provide feedback by:**   
 Please provide your feedback by 05/31/2020.

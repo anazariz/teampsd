@@ -48,11 +48,11 @@ prototype files are located in this folder and the steps to be followed are enum
 |--|--|
 |step 1-what do you need to get started|Y  |
 |step 2-setting up SQL Server|Y  |
-|step 3-setting up R and RStudio|Y  |
 |step 4-setting up ODBC  |Y  |
-|step 5-how to consume SQL Server data in RStudio using R Notebooks |Y  |
-|step 6-R datasets and visualizations |Y  |
-|step 7-putting it altogether   |Y  |
+|step 3-setting up R and RStudio|Y  |
+|step 5-how to consume SQL Server data in RStudio |Y  |
+|step 6-R datasets, Notebooks and visualization |Y  |
+|step 7-putting it altogether - END-TO-END visibility |Y  |
 
 **When:** When should they provide **feedback** for it to be 
 Please provide your feedback by 05/31/2020.

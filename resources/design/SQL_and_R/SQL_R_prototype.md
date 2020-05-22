@@ -14,8 +14,7 @@ Please note that some steps can be skipped within the VA environment, with acces
 |step 3-setting up ODBC  |N  |
 |step 4-setting up R and RStudio|N  |
 |step 5-how to consume SQL Server data in RStudio |N  |
-|step 6-R datasets, notebooks and visualization |N  |
-|step 7-putting it altogether - END-TO-END visibility |N  |
+
 
 **step 1-what you need to get started**
 

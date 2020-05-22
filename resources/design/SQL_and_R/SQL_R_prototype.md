@@ -48,3 +48,10 @@ Please choose "User DSN" instead of "System DSN" as instructed in the following 
 For Windows follow [these instructions](https://www.firehousesoftware.com/webhelp/FHCADMonitor/Content/InstallationGuide/03_Create64-bitODBCDataSource.htm).
 
 For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s-3731160.html). 
+
+**step 4-setting up R and RStudio**  
+
+Download and install the latest version of R for your version of Operating System from [here](https://www.r-project.org/).  
+
+Download and install the latest version of RStudio for your version of Operating System from [here](https://rstudio.com/).  
+

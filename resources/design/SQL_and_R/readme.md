@@ -44,7 +44,7 @@ User can leave a video of his/her experience with the instruction provide in thi
  **Where:** Where is this prototype on **GitHub**?
 prototype files are located in this folder and the steps to be followed are enumerated in the file names as follows:
 
-Please note that some steps can be skipped within the VA envionment, with access to VA database.  
+Please note that some steps can be skipped within the VA envionment, with access to VA databases.  
 
 |step  |can skip?  |
 |--|--|

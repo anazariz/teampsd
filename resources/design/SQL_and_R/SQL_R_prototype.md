@@ -54,4 +54,5 @@ For Windows follow [these instructions](https://www.firehousesoftware.com/webhel
 
 For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s-3731160.html). 
 
+**step 5-how to consume SQL Server data in RStudio**  
 

@@ -5,14 +5,14 @@
 
 This document explain the steps involved in this prototype and the instructions  for completing those steps
 
-Please note that some steps can be skipped within the VA environment, with access to VA databases.  
+Please note that some steps can be skipped within the VA environment, with access to VA databases, R and RStudio.  
 
 |step  |can skip?  |
 |--|--|
 |step 1-what you need to get started|Y  |
 |step 2-setting up SQL Server|Y  |
+|step 4-setting up R and RStudio|Y  |
 |step 3-setting up ODBC  |N  |
-|step 4-setting up R and RStudio|N  |
 |step 5-how to consume SQL Server data in RStudio |N  |
 
 

@@ -13,11 +13,11 @@
 
 The focus of the documents in this folder is on **item #5**. The objective is to demonstrate the viability of using **RStudio** as a medium for establishing an **"end-to-end data lineage"** view starting from the data extraction point (**VA CDW data warehouse**) to the data consumption point (**R datasets and visualizations**). Easy access to end-to-end data lineage is critical when validating and certifying extracted data and the transformation functions operating on that data throughout its journey to an endpoint. 
 
-**Who should test it:**.
+**Who should test the hypothsis:**
 The hypothesis can be tested by those who are stakeholders in the validity of data used in a research, which includes data owners, data engineers and modelers, data analysts, data validators, data stewards, data scientists and  support personnel.     
 
-**Why:** Why should those users test your **hypothesis**
-Data stakeholders would examine the feasibility and availability of the proposed solution and prototype from the perspective of their own usage. 
+**Why would you test the hypothesis:**
+Data stakeholders examine the feasibility and availability of the proposed solution and prototype from the perspective of their own usage. 
 
  1. Is the solution simple enough to use or does it have a steep
     learning curve?
@@ -39,12 +39,10 @@ Tester can leave a ".md" markdown file in this folder with the following naming 
 example: ash_nazarizadeh_05_31_2020.md  
  
 b) **observational:**
-User can leave a video of his/her experience with the instruction provide in this folder. 
+Please leave a video of your experience in this folder. 
  
- **Where:** Where is this prototype on **GitHub**?
+**Where is this prototype on **GitHub:**
 The prototype file is name SQL_R_prototype and is in this folder.
 
-Please note that some steps can be skipped within the VA envionment, with access to VA databases.  
-
-**When:** When should they provide **feedback** for it to be 
+**When to provide your feedback by:**   
 Please provide your feedback by 05/31/2020.

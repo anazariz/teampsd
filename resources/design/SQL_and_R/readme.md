@@ -42,19 +42,9 @@ b) **observational:**
 User can leave a video of his/her experience with the instruction provide in this folder. 
  
  **Where:** Where is this prototype on **GitHub**?
-prototype files are located in this folder and the steps to be followed are enumerated in the file names as follows:
+The prototype file is name SQL_R_prototype and is in this folder.
 
 Please note that some steps can be skipped within the VA envionment, with access to VA databases.  
-
-|step  |can skip?  |
-|--|--|
-|step 1-what do you need to get started|Y  |
-|step 2-setting up SQL Server|Y  |
-|step 4-setting up ODBC  |N  |
-|step 3-setting up R and RStudio|N  |
-|step 5-how to consume SQL Server data in RStudio |N  |
-|step 6-R datasets, Notebooks and visualization |N  |
-|step 7-putting it altogether - END-TO-END visibility |N  |
 
 **When:** When should they provide **feedback** for it to be 
 Please provide your feedback by 05/31/2020.

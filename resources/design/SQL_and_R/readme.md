@@ -42,7 +42,7 @@ b) **observational:**
 Please leave a video of your experience in this folder. 
  
 **Where is the prototype on **GitHub:**  
-Start with the prototype file SQL_R_prototype in this folder.
+Start with the file **SQL_R_prototype.md** in this folder.
 
 **When to provide feedback by:**   
 Please provide your feedback by 05/31/2020.

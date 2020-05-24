@@ -15,15 +15,15 @@ Please note that some steps can be skipped within the VA environment, with acces
 
 |step  |can skip?  |
 |--|--|
-|step 1-what you need to get started|N  |
-|step 2-setting up SQL Server|Y  |
-|step 3-setting up R and RStudio|Y  |
-|step 4-setting up ODBC  |N  |
-|step 5-how to consume SQL Server data in RStudio |N  |
+|step 1-what you need to get started| N |
+|step 2-setting up SQL Server| Y |
+|step 3-setting up R and RStudio| Y |
+|step 4-setting up ODBC  | N |
+|step 5-how to consume SQL Server data in RStudio | N |
 **More Advanced Steps**
-|step 6-supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility** - it is informational only |Y  |
-|step 7-we made some changes to the Microsoft test database to show some advanced concepts in step 8.  |Y  |
-|step 8-is for users wanting to dive into additional data capabilities provided by R, RStudio and [Shiny](https://shiny.rstudio.com/) |Y  |
+|step 6-supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility** - it is informational only | Y |
+|step 7-we made some changes to the Microsoft test database to show some advanced concepts in step 8.  | Y |
+|step 8-for users wanting to dive into additional data capabilities provided by R, RStudio and [Shiny](https://shiny.rstudio.com/) | Y |
 
 **step 1-what you need to get started**
 

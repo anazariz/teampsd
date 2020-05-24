@@ -103,3 +103,16 @@ If something goes wrong, please check that the following packages are loaded:
  - odbc 
  - stats 
  - utils
+ 
+ **Installing and/or Checking Packages** 
+ 
+ You could check the status of packages in RStudio using the a Tab named Packages (south-east corner of your RStudio IDE panels). You could also use the following commands in R Command Line (south-west corner of the RStudio IDE panels): 
+ 
+**to install:** 
+type install.packages("odbc") on the command line
+
+**to check:** 
+type test <- require("odbc")
+then type test
+
+you should see **[1] TRUE**, which means the package is installed.

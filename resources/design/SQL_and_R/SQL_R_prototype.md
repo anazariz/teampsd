@@ -21,9 +21,9 @@ Please note that some steps can be skipped within the VA environment, with acces
 |step 4-setting up ODBC  | N |
 |step 5-how to consume SQL Server data in RStudio | N |
 **Advanced Optional Steps**
-|step 6-The supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility** | Y |
+|step 6-supplemental.md file  | Y |
 |step 7-SQL_R_prototype.sql file  | Y |
-|step 8-for users wanting to dive into additional data capabilities provided by R, RStudio and [Shiny](https://shiny.rstudio.com/) | Y |
+|step 8-SQL_R_prototype.Rmd file | Y |
 
 **step 1-what you need to get started**
 
@@ -82,3 +82,24 @@ The SQL_R_prototype.sql file in this folder contains the changes we made to the 
  5. Right Click on Views and choose Refresh
  6. Expand Programmability then Right Click on Stored Procedures and choose Refresh  
 You should now see the new views and stored procedures you just created.
+
+**step 8-SQL_R_prototype.Rmd** 
+Users wanting to dive into additional data capabilities provided by R, RStudio and [Shiny](https://shiny.rstudio.com/)  can complete this step
+1. In RStudio click on File choose New File then R Notebook 
+ 2. Copy the content of the SQL_R_prototype.Rmd
+ 3. Paste the content into your blank new R Notebook
+ 4. Establish a database connection as you did in stepss 1 through 5
+ 5. Click on Run 
+
+Once the script runs, you should be seeing several data output and shiny screen pop up with various data elements and charts (please see a sample out put in step 6. 
+
+If something goes wrong, please check that the following packages are loaded:
+
+ - Base
+ - Datasets 
+ - Graphics 
+ - grDevices 
+ - methods 
+ - odbc 
+ - stats 
+ - utils

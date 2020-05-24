@@ -3,8 +3,14 @@
      
 ## prototype
 
-This document explain the steps involved in this prototype and the instructions  for completing those steps
+The objective of this **Prototype** is to establish a minimal connection from RStudio to SQL Server using ODBC.
 
+Notes:
+
+1. If you have access to a VA SQL Server test database, skip step 2
+2. If you have a VA R (version 4.0.0) and RStudio installed on your machine, skip step 3
+3. 
+  
 Please note that some steps can be skipped within the VA environment, with access to VA databases, R and RStudio.  
 
 |step  |can skip?  |
@@ -14,7 +20,8 @@ Please note that some steps can be skipped within the VA environment, with acces
 |step 3-setting up R and RStudio|Y  |
 |step 4-setting up ODBC  |N  |
 |step 5-how to consume SQL Server data in RStudio |N  |
-
+|step 6-supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility** - it is informational only |Y  |
+|step 7-is for advanced users wanting to dive into additional data capabilities provided by R, RStudio and [Shiny](https://shiny.rstudio.com/) |Y  |
 
 **step 1-what you need to get started**
 
@@ -24,7 +31,7 @@ To complete the testing of this prototype we will need SQL Server, SQL Server Ma
 
 ![attention](https://user-images.githubusercontent.com/39805164/82708362-e86d5a80-9c32-11ea-8361-9b78d9ddeaf8.png)
 
-**Please DO NOT download or install SQL Server, SQL Server Management Studio, R and RStudio on a VA machine.** 
+**Please DO NOT download or install SQL Server, SQL Server Management Studio, R and RStudio on your VA machine. These items can only be installed by your IT administrators.** 
 
 SQL Server can be downloaded [here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). 
 
@@ -54,5 +61,6 @@ For Windows follow [these instructions](https://www.firehousesoftware.com/webhel
 
 For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s-3731160.html). 
 
-**step 5-how to consume SQL Server data in RStudio**  
+**step 5-how to consume SQL Server data in RStudio**
+
 

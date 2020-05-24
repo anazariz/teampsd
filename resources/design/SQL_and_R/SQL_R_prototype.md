@@ -1,4 +1,3 @@
-
 <img src = "https://github.com/lzim/teampsd/blob/teampsd_style/teampsd_logo/team_psd_logo_sm.png"
      height = "200" width = "600"> 
      
@@ -67,15 +66,14 @@ For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s
 **step 5-how to consume SQL Server data in RStudio**
 
 
-**Advanced Optional Steps**
-
+## Advanced Optional Steps
 
 **step 6-how to consume SQL Server data in RStudio**
 
 The supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility**. There are no user actions in this file.
 
 **step 7-SQL_R_prototype.sql** 
-The SQL_R_prototype.sql file in this folder contains the changes we made the Microsoft test database to show some advanced concepts in step 8. 
+The SQL_R_prototype.sql file in this folder contains the changes we made to the Microsoft test database to show some advanced concepts in step 8 (RStudio/Shiny). 
 
  1. In SSMS click "New Query" and in the blank query tab paste the contents of this file. 
  2. Copy the content of the SQL_R_prototype.sql

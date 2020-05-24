@@ -66,7 +66,9 @@ For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s
 
 **step 5-how to consume SQL Server data in RStudio**
 
+
 **Advanced Optional Steps**
+
 
 **step 6-how to consume SQL Server data in RStudio**
 

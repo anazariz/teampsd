@@ -1,0 +1,166 @@
+---
+title: "R Notebook"
+output: html_document
+runtime: shiny
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook to prototype Drill Down charting for data analysis.
+
+We will showcase connecting to a DB from R and creating a chart with multiple data frames then drilling down to the base SQL table utilizing shiny.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(DBI)
+library(ggplot2)
+library(sqldf)
+library(shinydashboard)
+library(shiny)
+con <- dbConnect(odbc::odbc(), "R_SQL_SERVER", timeout = 20)
+```
+
+
+## Database Connection and QUeries from SQL and R
+
+Connect to the View created to view all US Customer Orders
+
+```{sql, connection=con}
+select * from AdventureWorksLT2017.[SalesLT].[vUSCustomerOrders]
+
+```
+
+Same query executed in R
+
+```{r us_customer_orders_in_R}
+us_customer_orders <- dbGetQuery(con, "select * from AdventureWorksLT2017.[SalesLT].[vUSCustomerOrders]")
+```
+
+Let's checkout another query accessing a view
+
+```{sql, connection=con}
+select * from AdventureWorksLT2017.[SalesLT].[vUSCustomerOrders] where CompanyName = 'Aerobic Exercise Company'
+
+```
+
+Here we can use a Stored Procedure to view all the customers that live in California using SQL Code.
+```{sql, connection=con}
+EXEC AdventureWorksLT2017.dbo.pSpecialUSCustomers @state = 'California'
+
+```
+
+
+Now we can execute the same query using R and a variable for State
+
+```{r us_customer_orders_in_California_R}
+state = "California"
+dbGetQuery(con, paste("EXEC AdventureWorksLT2017.dbo.pSpecialUSCustomers @state =", state))
+```
+
+Next we'll turn this into a function that can pass a value the state variable.
+
+```{r get_customers_by_state}
+get_customers_by_state <- function(state){
+  dbGetQuery(con, paste("EXEC AdventureWorksLT2017.dbo.pSpecialUSCustomers @state =", dbQuoteString(con,state)))
+}
+
+```
+
+Lets test our function and make sure it works!
+
+```{r}
+get_customers_by_state("Utah")
+
+```
+
+
+
+## Creating visualizations and Shiny Dashboards
+
+Now that we've set up some data and functions let's do some charting.
+
+View of all US Customer Orders Grouped by State
+
+```{r plot_customer_orders}
+us_customer_orders_graph = ggplot(data = us_customer_orders) +
+  geom_bar(aes(x = State), stat = "count")
+
+us_customer_orders_graph
+
+```
+
+View of Customer Orders for California using our function
+
+```{r plot_customer_by_state}
+ggplot(data = get_customers_by_state("California"), mapping=aes(x=CompanyName, y=TotalDue)) + geom_point() + theme(axis.text.x = element_text(angle = 90))
+
+```
+
+Drill down one step further to see the record in the database.
+
+
+If we want this to be scalable we should likely make this a function as well.
+
+```{r get_company_record}
+get_company_record_by_state <- function(company_name, state){
+  dbGetQuery(con, paste("EXEC AdventureWorksLT2017.dbo.pSpecialUSCompany @company_name = ", dbQuoteString(con,company_name), ", @state =", dbQuoteString(con,state)))
+}
+```
+
+Quickly validate that it's working.
+
+```{r }
+
+get_company_record_by_state("Aerobic Exercise Company", "California")
+
+```
+Create a function to look up a customer by state
+```{r plot_customer_by_state_function}
+customer_by_state <- function(state){
+  ggplot(data = get_customers_by_state(state), mapping=aes(x=CompanyName, y=TotalDue)) + geom_point() + theme(axis.text.x = element_text(angle = 90))
+}
+
+```
+
+```{r shiny_app}
+
+ui <- dashboardPage(
+  dashboardHeader(title = "US Sales"),
+  dashboardSidebar(disable = TRUE),
+  dashboardBody(
+    plotOutput(outputId = "us_customer_orders_graph", click = clickOpts(id = 'plot_click', clip = TRUE)),
+    plotOutput(outputId = "state_customers", click = clickOpts(id = 'plot_click2', clip = TRUE)),
+    verbatimTextOutput("test"),
+    tableOutput("company_purchases")
+  )
+)
+
+server <- function(input, output) {
+  state_selected <- reactiveVal("")
+  output$us_customer_orders_graph <-
+    renderPlot(us_customer_orders_graph)
+  
+  output$state_customers <- renderPlot({
+    if (is.null(input$plot_click$x))
+      return("")
+    else {
+      states = sort(unique(us_customer_orders_graph$data$State))
+      state_selected(states[round(input$plot_click$x)])
+      state_customers_graph = customer_by_state(state_selected())
+      state_customers_graph
+    }
+  })
+
+  
+  output$company_purchases <- renderTable({
+    if (is.null(input$plot_click2$x)) return(NULL)
+    else {
+      companies = sort(unique(sqldf(paste("select CompanyName from us_customer_orders where State=", dbQuoteString(con,state_selected()))))$CompanyName)
+      company_selected = companies[round(as.double(input$plot_click2$x))]
+      get_company_record_by_state(company_selected,state_selected())
+    }
+  })
+  
+}
+
+shinyApp(ui, server)
+```

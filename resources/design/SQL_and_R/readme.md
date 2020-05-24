@@ -41,8 +41,8 @@ example: ash_nazarizadeh_05_31_2020.md
 b) **observational:**
 Please leave a video of your experience in this folder. 
  
-**Where is the prototype on **GitHub:**
-The prototype file is name SQL_R_prototype and is in this folder.
+**Where is the prototype on **GitHub:**  
+Start with the prototype file SQL_R_prototype in this folder.
 
 **When to provide feedback by:**   
 Please provide your feedback by 05/31/2020.

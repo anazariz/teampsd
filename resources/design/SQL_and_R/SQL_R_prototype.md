@@ -9,13 +9,13 @@ Notes:
 
 1. If you have access to a VA SQL Server test database, skip step 2
 2. If you have a VA R (version 4.0.0) and RStudio installed on your machine, skip step 3
-3. 
+3. steps 6 & 7 provide additional information only and are optional
   
 Please note that some steps can be skipped within the VA environment, with access to VA databases, R and RStudio.  
 
 |step  |can skip?  |
 |--|--|
-|step 1-what you need to get started|Y  |
+|step 1-what you need to get started|N  |
 |step 2-setting up SQL Server|Y  |
 |step 3-setting up R and RStudio|Y  |
 |step 4-setting up ODBC  |N  |
@@ -31,7 +31,7 @@ To complete the testing of this prototype we will need SQL Server, SQL Server Ma
 
 ![attention](https://user-images.githubusercontent.com/39805164/82708362-e86d5a80-9c32-11ea-8361-9b78d9ddeaf8.png)
 
-**Please DO NOT download or install SQL Server, SQL Server Management Studio, R and RStudio on your VA machine. These items can only be installed by your IT administrators.** 
+**Please DO NOT download or install SQL Server, SQL Server Management Studio, R and RStudio on a VA machine.** 
 
 SQL Server can be downloaded [here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). 
 
@@ -62,5 +62,3 @@ For Windows follow [these instructions](https://www.firehousesoftware.com/webhel
 For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s-3731160.html). 
 
 **step 5-how to consume SQL Server data in RStudio**
-
-

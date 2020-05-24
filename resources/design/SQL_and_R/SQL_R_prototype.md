@@ -1,3 +1,4 @@
+
 <img src = "https://github.com/lzim/teampsd/blob/teampsd_style/teampsd_logo/team_psd_logo_sm.png"
      height = "200" width = "600"> 
      
@@ -21,8 +22,8 @@ Please note that some steps can be skipped within the VA environment, with acces
 |step 4-setting up ODBC  | N |
 |step 5-how to consume SQL Server data in RStudio | N |
 **Advanced Optional Steps**
-|step 6-supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility** | Y |
-|step 7-we made some changes to the Microsoft test database to show some advanced concepts in step 8.  | Y |
+|step 6-The supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility** | Y |
+|step 7-SQL_R_prototype.sql file  | Y |
 |step 8-for users wanting to dive into additional data capabilities provided by R, RStudio and [Shiny](https://shiny.rstudio.com/) | Y |
 
 **step 1-what you need to get started**
@@ -64,3 +65,20 @@ For Windows follow [these instructions](https://www.firehousesoftware.com/webhel
 For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s-3731160.html). 
 
 **step 5-how to consume SQL Server data in RStudio**
+
+**Advanced Optional Steps**
+
+**step 6-how to consume SQL Server data in RStudio**
+
+The supplemental.md file in this folder talks about the importance of **End-to-End Data Lineage Visibility**. There are no user actions in this file.
+
+**step 7-SQL_R_prototype.sql** 
+The SQL_R_prototype.sql file in this folder contains the changes we made the Microsoft test database to show some advanced concepts in step 8. 
+
+ 1. In SSMS click "New Query" and in the blank query tab paste the contents of this file. 
+ 2. Copy the content of the SQL_R_prototype.sql
+ 3. Paste the content to the New Query tab
+ 4. Click Execute
+ 5. Right Click on Views and choose Refresh
+ 6. Expand Programmability then Right Click on Stored Procedures and choose Refresh  
+You should now see the new views and stored procedures you just created.

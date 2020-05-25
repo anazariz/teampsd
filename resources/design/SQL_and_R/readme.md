@@ -31,7 +31,7 @@ Data stakeholders examine the feasibility and availability of the proposed solut
  4. Does the tester consider the solution scalable enough to
     potentially meet his/her future needs?
 
-**How**: How to provide feedback
+**How to provide feedback:**  
 
 a) **written:**
 Tester can leave a ".md" markdown file in this folder with the following naming convention, <user first_mid_last name>_<date: mmddyyyy>.md. 

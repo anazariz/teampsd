@@ -65,6 +65,26 @@ For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s
 
 **step 5-how to consume SQL Server data in RStudio**
 
+- In RStudio Click on File then choose New File then R Notebook
+- Save it as SQL_R_Test.Rmd
+- You will need two Chunks in your new R Notebook
+- A Chunk starts on a new line with 3 backtick symbols ("```")  and ends on a new like with 3 backtick symbols
+-  your first chunk should look like this:
+ 
+![SQL_SERVER_8](https://user-images.githubusercontent.com/39805164/82768377-8011ab00-9de3-11ea-900c-51b083b5f46b.jpg)
+
+- After entering the chunks, click on the the green triangle as seen in the above picture to run the first chunk. It will take a few seconds to establish a connection with you database. Keep an eye on the command line (south west corner of your IDE). You should see the command line got back to a blank ">" command ready mode (meaning command finished successfully. Your should also see your database tables in the "Connection" panel (north east panel of your IDE panels).
+- After a connection is established run the second chunk.
+You should see a date returned to you from the database, 
+something like this:
+
+**2020-05-24 17:31:33**  
+**1 row**  
+
+You have successfully connected to your database from RStudio! 
+
+![success](https://user-images.githubusercontent.com/39805164/82768658-3aee7880-9de5-11ea-98d2-04974dc01c3b.jpg)
+
 
 ## Advanced Optional Steps
 
@@ -115,4 +135,4 @@ type install.packages("odbc") on the command line
 type test <- require("odbc")
 then type test
 
-you should see **[1] TRUE**, which means the package is installed.
+you should see **[1] TRUE**, which means the package is installed. 

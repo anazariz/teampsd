@@ -83,7 +83,7 @@ something like this:
 
 You have successfully connected to your database from RStudio! 
 
-![success](https://user-images.githubusercontent.com/39805164/82768658-3aee7880-9de5-11ea-98d2-04974dc01c3b.jpg)
+![success](https://user-images.githubusercontent.com/39805164/82768692-7be68d00-9de5-11ea-8b15-2ffb834f4d04.jpg)
 
 
 ## Advanced Optional Steps

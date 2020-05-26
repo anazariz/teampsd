@@ -12,7 +12,7 @@
 
 **1. What is SQL Server**  
 
-**Microsoft SQL Server** is a **Relational Database Management System (RDBMS)**. As an **RDBMS**, it is a software product with the primary function of storing and retrieving data as requested by other software applications, which may run either on the same computer or on another computer across a network, including the Internet. CDW is build on SQL Server. 
+**Microsoft SQL Server** is a **Relational Database Management System (RDBMS)**. As an **RDBMS**, it is a software product with the primary function of storing and retrieving data as requested by other software applications, which may run either on the same computer or on another computer across a network, including the Internet. CDW was built on SQL Server. 
 
 Although not the only choice, majority of SQL Server users, including **Database Administrators (DBA)** use a Microsoft tool called **SQL Server Management Studio (SSMS)** to interact with the DBMS. 
 

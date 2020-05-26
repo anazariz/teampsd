@@ -25,7 +25,7 @@ Following is a simplistic view of the components of SQL Server.
 In our scripts we use a lot of **Temp Tables** to store intermediate results. Although Temp Tables can help break up long queries into smaller, more managable chuncks, they have a single database-session lifetime. Once your current connection to the database ends, the Temp Table data has to be reconstructed from scratch. As shown below, if f6() has dependency on previous transformations, all parent dependencies have to be recreated so that f6() can be reconstructed. Another challenage is that RStudio, as our critical IDE (Integrated Development Platform), consumes data is from extracted CSV files rather than directly from the database. So the problems to be solved are:
 
  1. Each time a new data element is needed from CDW, a new extract has to be created
- 2. An **End-to-End Visibility** from the point data is extracted (CDW) to the point data is consumed (RStudio) is needed   
+ 2. An **End-to-End Visibility** from the point data is extracted (CDW) to the point data is consumed (RStudio) is difficult to establish 
 
 ![SQL_SERVER_2](https://user-images.githubusercontent.com/39805164/82942472-d9e1b480-9f4c-11ea-87bc-374236dc02ff.jpg)
 

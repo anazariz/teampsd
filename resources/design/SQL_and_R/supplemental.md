@@ -18,7 +18,7 @@ Although not the only choice, majority of SQL Server users, including **Database
 
 Following is a simplistic view of the components of SQL Server. 
 
-![SQL_SERVER](https://user-images.githubusercontent.com/39805164/82762705-5f336080-9db7-11ea-9390-3bbf781b5437.jpg)
+![SQL_SERVER](https://user-images.githubusercontent.com/39805164/82942471-d9491e00-9f4c-11ea-8c9c-df1f8bd3a7f6.jpg)
 
 **2. Current Data Platform** 
 
@@ -27,32 +27,32 @@ In our scripts we use a lot of **Temp Tables** to store intermediate results. Te
  1. Each time a new data element is needed from CDW, a new extract has to be created
  2. An **End-to-End Visibility** from the point data is extracted (CDW) to the point data is consumed (RStudio) is needed   
 
-![SQL_SERVER_2](https://user-images.githubusercontent.com/39805164/82763248-25645900-9dbb-11ea-97d2-8e5ae84db180.jpg)
+![SQL_SERVER_2](https://user-images.githubusercontent.com/39805164/82942472-d9e1b480-9f4c-11ea-87bc-374236dc02ff.jpg)
 
 **3. Two Enhancement Methods**  
 
 1-When a connection is made to the database the session must be kept alive during the run or the temporary results are lost. A **Stored Procedure** acts as a single container that can keep the Temp Tables results intact while the script (now residing in a Stored Procedure) is running. While this does not resolve the dependency problem, it improved the overall process. This method is suitable for production jobs that need to execute from beginning to end such as monthly jobs.
 
-![SQL_SERVER_3](https://user-images.githubusercontent.com/39805164/82763643-0c10dc00-9dbe-11ea-884e-834ed0fea33a.jpg)
+![SQL_SERVER_3](https://user-images.githubusercontent.com/39805164/82942475-da7a4b00-9f4c-11ea-8c71-f52acb93be4b.jpg)
 
 2-Intermediate **Views** can be used to eliminate the dependency issue. Once built, each view is always live and can be queried for view into intermediate results. This method is suitable if intermediate results have to examined.
 
-![SQL_SERVER_4](https://user-images.githubusercontent.com/39805164/82763821-344d0a80-9dbf-11ea-9a5e-3453cff93e47.jpg)
+![SQL_SERVER_4](https://user-images.githubusercontent.com/39805164/82942476-da7a4b00-9f4c-11ea-9f7c-db0532a5e501.jpg)
 
 **4. Enhanced Data Platform** 
 
 Data Consumers can interact with the database in **Real-time** via **ODBC (open database connectivity)**. R Datasets can be constructed using Real-Time data and **End-to-End Visibility is achieved.
 
-![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/82763972-44191e80-9dc0-11ea-8dd1-a02e0b650df7.jpg)
+![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/82942456-d5b59700-9f4c-11ea-9c99-0f6d537549c3.jpg)
  
  **5. End-to=End Data Lineage Visibility** 
 
 SQL and R code and results can be views side by side in RStudio. This will result visibility into how data was extracted, transformed and consumed (in datasets and visuals).
 
-![SQL_SERVER_6](https://user-images.githubusercontent.com/39805164/82764361-f7831280-9dc2-11ea-8683-070c2e4ba2f7.jpg)
+![SQL_SERVER_6](https://user-images.githubusercontent.com/39805164/82942459-d64e2d80-9f4c-11ea-8ebc-422ca5100d8d.jpg)
 
 **6. Transportable Code** 
 
 SQL code can be tested in SQL Server Management Studio (SSMS) and copied to RStudio.
 
-![SQL_SERVER_7](https://user-images.githubusercontent.com/39805164/82764502-04543600-9dc4-11ea-9279-be6328450e25.jpg)
+![SQL_SERVER_7](https://user-images.githubusercontent.com/39805164/82942464-d817f100-9f4c-11ea-9600-ef2b25205a71.jpg)

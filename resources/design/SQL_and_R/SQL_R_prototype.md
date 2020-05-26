@@ -71,7 +71,7 @@ For MAC follow [these instructions](http://dcx.sap.com/1200/en/dbadmin/connect-s
 - A Chunk starts on a new line with 3 backtick symbols ("```")  and ends on a new like with 3 backtick symbols
 -  your first chunk should look like this:
  
-![SQL_SERVER_8](https://user-images.githubusercontent.com/39805164/82768377-8011ab00-9de3-11ea-900c-51b083b5f46b.jpg)
+![SQL_SERVER_8](https://user-images.githubusercontent.com/39805164/82942468-d8b08780-9f4c-11ea-8eec-f24044ad09f5.jpg)
 
 - After entering the chunks, click on the the green triangle as seen in the above picture to run the first chunk. It will take a few seconds to establish a connection with you database. Keep an eye on the command line (south west corner of your IDE). You should see the command line got back to a blank ">" command ready mode (meaning command finished successfully. Your should also see your database tables in the "Connection" panel (north east panel of your IDE panels).
 - After a connection is established run the second chunk.

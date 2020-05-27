@@ -27,23 +27,23 @@ In our scripts we use a lot of **Temp Tables** to store intermediate results. Al
  1. Each time a new data element is needed from CDW, a new extract has to be created
  2. An **End-to-End Visibility** from the point data is extracted (CDW) to the point data is consumed (RStudio) is difficult to establish 
 
-![SQL_SERVER_2](https://user-images.githubusercontent.com/39805164/82942472-d9e1b480-9f4c-11ea-87bc-374236dc02ff.jpg)
+![SQL_SERVER_2](https://user-images.githubusercontent.com/39805164/83077225-d40ed080-a02b-11ea-86a6-aba7b83f4c68.jpg)
 
 **3. Two Enhancement Methods**  
 
 1-When a connection is made to the database the session must be kept alive during the run or the temporary results are lost. A **Stored Procedure** acts as a single container that can keep the Temp Tables results intact while the script (now residing in a Stored Procedure) is running. While this does not resolve the dependency problem, it improved the overall process. This method is suitable for production jobs that need to execute from beginning to end such as monthly jobs.
 
-![SQL_SERVER_3](https://user-images.githubusercontent.com/39805164/82942475-da7a4b00-9f4c-11ea-8c71-f52acb93be4b.jpg)
+![SQL_SERVER_3](https://user-images.githubusercontent.com/39805164/83077237-da9d4800-a02b-11ea-8912-cc02ea5a1aa3.jpg)
 
 2-Intermediate **Views** can be used to eliminate the dependency issue. Once built, each view is always live and can be queried for view into intermediate results. This method is suitable if intermediate results have to examined.
 
-![SQL_SERVER_4](https://user-images.githubusercontent.com/39805164/82942476-da7a4b00-9f4c-11ea-9f7c-db0532a5e501.jpg)
+![SQL_SERVER_4](https://user-images.githubusercontent.com/39805164/83077245-de30cf00-a02b-11ea-8bdc-eb0235dfb4f1.jpg)
 
 **4. Enhanced Data Platform** 
 
 Data Consumers can interact with the database in **Real-time** via **ODBC (open database connectivity)**. R Datasets can be constructed using Real-Time data and **End-to-End Visibility** is achieved.
 
-![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/82942456-d5b59700-9f4c-11ea-9c99-0f6d537549c3.jpg)
+![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/83077260-e426b000-a02b-11ea-86c4-8042dbfba9ed.jpg)
  
  **5. End-to=End Data Lineage Visibility** 
 

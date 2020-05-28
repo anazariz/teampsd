@@ -41,9 +41,9 @@ In our scripts we use a lot of **Temp Tables** to store intermediate results. Al
 
 **4. Enhanced Data Platform** 
 
-Data Consumers can interact with the database in **Real-time** via **ODBC (open database connectivity)**. R Datasets can be constructed using Real-Time data and **End-to-End Visibility** is achieved.
+Data Consumers can interact with the database in **Real-time** via **ODBC (open database connectivity)**. R Datasets can be constructed using Real-Time data and **End-to-End Visibility** is achieved. Database objects (not data) are version controlled using GitHub. 
 
-![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/83078045-809d8200-a02d-11ea-872b-724dfe5d6843.jpg)
+![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/83205634-fc69fe00-a103-11ea-9750-7784bf2df255.jpg)
  
  **5. End-to=End Data Lineage Visibility** 
 

@@ -31,7 +31,7 @@ In our scripts we use a lot of **Temp Tables** to store intermediate results. Al
 
 **3. Two Enhancement Methods**  
 
-1-When a connection is made to the database the session must be kept alive during the run or the temporary results are lost. A **Stored Procedure** acts as a single container that can keep the Temp Tables results intact while the script (now residing in a Stored Procedure) is running. While this does not resolve the dependency problem, it improved the overall process. This method is suitable for production jobs that need to execute from beginning to end such as monthly jobs.
+1-When a connection is made to the database the session must be kept alive during the run or the temporary results are lost. A **Stored Procedure** acts as a single container that can keep the Temp Table results intact while the script (now residing in a Stored Procedure) is running. While this does not resolve the dependency problem, it improved the overall process. This method is suitable for production jobs that need to execute from beginning to end such as monthly jobs.
 
 ![SQL_SERVER_3](https://user-images.githubusercontent.com/39805164/83077237-da9d4800-a02b-11ea-8912-cc02ea5a1aa3.jpg)
 

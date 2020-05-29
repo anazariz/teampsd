@@ -39,7 +39,7 @@ Tester can leave a ".md" markdown file in this folder with the following naming 
 example: ash_nazarizadeh_05_31_2020.md  
  
 b) **observational:**
-Please leave a video of your experience in this folder. 
+Please leave feedback on your experience in MS Teams > design_teampsd_2.0 > CI Prototypes Discussion. 
  
 **Where is the prototype on GitHub:**  
 Start with the file **SQL_R_prototype.md** in this folder.

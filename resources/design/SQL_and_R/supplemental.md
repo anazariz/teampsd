@@ -45,7 +45,7 @@ Data Consumers can interact with the database in **Real-time** via **ODBC (open 
 
 ![SQL_SERVER_5](https://user-images.githubusercontent.com/39805164/83205634-fc69fe00-a103-11ea-9750-7784bf2df255.jpg)
  
- **5. End-to=End Data Lineage Visibility** 
+ **5. End-to-End Data Lineage Visibility** 
 
 SQL and R code and results can be views side by side in RStudio. This will result visibility into how data was extracted, transformed and consumed (in datasets and visuals).
 
